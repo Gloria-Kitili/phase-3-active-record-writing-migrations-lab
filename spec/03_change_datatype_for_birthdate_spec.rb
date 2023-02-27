@@ -7,7 +7,7 @@ describe ChangeDatatypeForBirthdate do
     sql = "DROP TABLE IF EXISTS students"
     ActiveRecord::Base.connection.execute(sql)
 
-    # Manually runs the migration
+    # manually runs the migration
     CreateStudents.new.change
     AddGradeAndBirthdateToStudents.new.change
     ChangeDatatypeForBirthdate.new.change

@@ -6,7 +6,7 @@ describe AddGradeAndBirthdateToStudents do
     sql = "DROP TABLE IF EXISTS students"
     ActiveRecord::Base.connection.execute(sql)
 
-    # Manually runs the migrations
+    # manually runs the migrations
     CreateStudents.new.change
     AddGradeAndBirthdateToStudents.new.change
     

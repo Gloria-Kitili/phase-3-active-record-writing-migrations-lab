@@ -1,0 +1,1 @@
+require_relative '../db/migrate/01_create_students'
